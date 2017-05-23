@@ -1,0 +1,58 @@
+/* pages/gank/oneDay/oneDay.wxss */
+
+.oneday_root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image_view {
+  width: 100%;
+}
+
+.category_view{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60rpx;
+}
+
+.category_title{
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+}
+
+.category_title text{
+  font-size: 34rpx;
+  color: #111111;
+  width: 100%;
+}
+
+.catetory_content{
+    width: 88%;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 16rpx;
+    padding-bottom: 16rpx;
+    flex-direction: row;
+}
+
+.catetory_content text{
+  font-size: 26rpx;
+  color: #666666;
+  margin-left: 2%;
+  width: 100%;
+}
+
+.catetory_content image{
+  width: 36rpx;
+  height: 36rpx;
+}
+

@@ -1,0 +1,4 @@
+<!--pages/gank/detail/detail.wxml-->
+<view class="view_detail_class">
+    <text class="view_detail_text">{{url}}</text>
+</view>

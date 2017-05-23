@@ -1,0 +1,28 @@
+/**app.wxss**/
+Page {
+  background: whitesmoke;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  position: relative;
+} 
+
+.load-more-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
+  height: 100rpx;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.load-more-tips {
+  font-size: 30rpx;
+  color: #999999;
+}
+

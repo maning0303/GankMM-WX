@@ -1,0 +1,75 @@
+<!--pages/gank/home/home.wxml-->
+
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+    Android
+  </view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+    iOS
+  </view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+    前端
+  </view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 40}}px" bindchange="bindChange">
+  <!-- Android -->
+  <swiper-item>
+    <view class="gank_root">
+      <scroll-view scroll-y="{{true}}" bindscrolltolower="onBindscrolltolower" class="scroll_view">
+        <block wx:for="{{mDataAndroid}}">
+          <view class="item_view" bindtap="onItemClick" data-item="{{item}}">
+            <text class="item_title">{{item.desc}}</text>
+            <view class="item_bottom">
+              <text>{{item.publishedAt}}</text>
+              <text>{{item.who}}</text>
+            </view>
+          </view>
+        </block>
+        <view class="load-more-container" hidden="{{isHiddenLoadMoreView[currentTab]}}">
+          <text class="load-more-tips">正在加载中...</text>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+
+  <!-- iOS -->
+  <swiper-item>
+    <view class="gank_root">
+      <scroll-view scroll-y="{{true}}" bindscrolltolower="onBindscrolltolower" class="scroll_view">
+        <block wx:for="{{mDataIOS}}">
+          <view class="item_view" bindtap="onItemClick" data-item="{{item}}">
+            <text class="item_title">{{item.desc}}</text>
+            <view class="item_bottom">
+              <text>{{item.publishedAt}}</text>
+              <text>{{item.who}}</text>
+            </view>
+          </view>
+        </block>
+        <view class="load-more-container" hidden="{{isHiddenLoadMoreView[currentTab]}}">
+          <text class="load-more-tips">正在加载中...</text>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+
+  <!-- Web -->
+  <swiper-item>
+    <view class="gank_root">
+      <scroll-view scroll-y="{{true}}" bindscrolltolower="onBindscrolltolower" class="scroll_view">
+        <block wx:for="{{mDataWeb}}">
+          <view class="item_view" bindtap="onItemClick" data-item="{{item}}">
+            <text class="item_title">{{item.desc}}</text>
+            <view class="item_bottom">
+              <text>{{item.publishedAt}}</text>
+              <text>{{item.who}}</text>
+            </view>
+          </view>
+        </block>
+        <view class="load-more-container" hidden="{{isHiddenLoadMoreView[currentTab]}}">
+          <text class="load-more-tips">正在加载中...</text>
+        </view>
+      </scroll-view>
+    </view>
+  </swiper-item>
+</swiper>

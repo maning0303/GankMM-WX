@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/gank/girl/girl",
+    "pages/gank/home/home",
+    "pages/gank/history/history",
+    "pages/gank/mine/mine",
+    "pages/gank/detail/detail",
+    "pages/gank/oneDay/oneDay"
+  ],
+
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "干货营",
+    "navigationBarTextStyle":"light"
+  },
+
+  "tabBar": {
+    "backgroundColor":"#FFFFFF",
+    "borderStyle":"white",
+    "list": [
+      {
+        "pagePath": "pages/gank/girl/girl",
+        "text": "美女",
+        "iconPath": "image/icon_girl.png",
+        "selectedIconPath": "image/icon_girl_hl.png"
+      },
+      {
+        "pagePath": "pages/gank/home/home",
+        "text": "干货",
+        "iconPath": "image/icon_home.png",
+        "selectedIconPath": "image/icon_home_hl.png"
+      },
+      {
+        "pagePath": "pages/gank/history/history",
+        "text": "历史",
+        "iconPath": "image/icon_history.png",
+        "selectedIconPath": "image/icon_history_hl.png"
+      },
+      {
+        "pagePath": "pages/gank/mine/mine",
+        "text": "我的",
+        "iconPath": "image/icon_mine.png",
+        "selectedIconPath": "image/icon_mine_hl.png"
+      }
+    ]
+  },
+
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+
+  "debug": true
+
+}

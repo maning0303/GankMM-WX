@@ -1,0 +1,96 @@
+/* pages/gank/home/home.wxss */
+.swiper-tab{  
+    width: 100%;  
+    height: 40px;
+    border-bottom: 1px solid #CCCCCC;  
+    text-align: center;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+} 
+
+.swiper-tab-list{  
+    height: 100%;
+    font-size: 26rpx; 
+    align-content: center; 
+    align-items: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 20%;  
+    color: #777777;
+} 
+
+.on{ 
+    color: #1296db;  
+    border-bottom: 6rpx solid #1296db;
+}   
+
+.gank_root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll_view{
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.item_view {
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  height: 200rpx;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_title {
+  width: 92%;
+  margin: 4%;
+  color: #353535;
+  font-size: 30rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.item_bottom {
+  height: 80rpx;
+  width: 92%;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.item_bottom text {
+  color: #888;
+  font-size: 24rpx;
+}
+
+.item_time {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  background-color: #000;
+  opacity: 0.6;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+}

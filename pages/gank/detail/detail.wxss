@@ -1,0 +1,15 @@
+/* pages/gank/detail/detail.wxss */
+.view_detail_class {
+  width: 100%;
+  height: 100%;
+  padding: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.view_detail_text {
+  width: 92%;
+  color: #1296db;
+  font-size: 30rpx;
+}

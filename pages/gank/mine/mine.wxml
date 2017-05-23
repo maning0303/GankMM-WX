@@ -1,0 +1,22 @@
+<!--pages/gank/mine/mine.wxml-->
+<view class="mine_root">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="item_view" bindtap="bindClickFeedBack">
+    <view class="item_view_left">
+      <image class="image_left" mode="aspectFit" src="/image/icon_feedback.png"></image>
+      <text>意见反馈</text>
+    </view>
+    <image class="image_right" mode="aspectFit" src="/image/icon_arrow_right.png"></image>
+  </view>
+  
+  <view class="bottom_version_view">
+    <text>版本：V1.0</text>
+    <text>数据：Gank.io</text>
+    <text>https://github.com/maning0303/GankMM-WX</text>
+  </view>
+
+</view>

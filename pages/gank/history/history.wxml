@@ -1,0 +1,13 @@
+<!--pages/gank/history/history.wxml-->
+<view class="history_root">
+  <block wx:for="{{mDatas}}">
+    <view class="item_view" bindtap="onHistoryItemClick" data-time="{{item}}">
+      <text>{{item}}</text>
+    </view>
+  </block>
+
+  <view class="load-more-container" hidden="{{isHiddenLoadMoreView}}">
+    <text class="load-more-tips">正在加载中...</text>
+  </view>
+
+</view>

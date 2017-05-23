@@ -1,0 +1,78 @@
+<!--pages/gank/oneDay/oneDay.wxml-->
+<view class="oneday_root">
+
+  <image class="image_view" src="{{imageUrl}}" mode="widthFix"></image>
+
+
+  <view class="category_view">
+    <!--    
+    resultsAndroid: [],
+    resultsIOS: [],
+    resultsVideo: [],
+    resultsExpand: [],
+    resultsOther: [],
+  -->
+
+    <!--Android-->
+    <view class="category_title">
+      <text>Android</text>
+    </view>
+    <!--内容-->
+    <block wx:for="{{resultsAndroid}}" wx:for-item="item_content">
+      <view class="catetory_content" bindtap="bindItemClick" data-content="{{item_content}}">
+        <image src="/image/icon_android.png" mode="aspectFit"></image>
+        <text>{{item_content.desc}}</text>
+      </view>
+    </block>
+
+    <!--iOS-->
+    <view class="category_title">
+      <text>iOS</text>
+    </view>
+    <!--内容-->
+    <block wx:for="{{resultsIOS}}" wx:for-item="item_content">
+      <view class="catetory_content" bindtap="bindItemClick" data-content="{{item_content}}">
+        <image src="/image/icon_ios.png" mode="aspectFit"></image>
+        <text>{{item_content.desc}}</text>
+      </view>
+    </block>
+
+    <!--休息视频-->
+    <view class="category_title">
+      <text>休息视频</text>
+    </view>
+    <!--内容-->
+    <block wx:for="{{resultsVideo}}" wx:for-item="item_content">
+      <view class="catetory_content" bindtap="bindItemClick" data-content="{{item_content}}">
+        <image src="/image/icon_video.png" mode="aspectFit"></image>
+        <text>{{item_content.desc}}</text>
+      </view>
+    </block>
+
+    <!--拓展资源-->
+    <view class="category_title">
+      <text>拓展资源</text>
+    </view>
+    <!--内容-->
+    <block wx:for="{{resultsExpand}}" wx:for-item="item_content">
+      <view class="catetory_content" bindtap="bindItemClick" data-content="{{item_content}}">
+        <image src="/image/icon_expand.png" mode="aspectFit"></image>
+        <text>{{item_content.desc}}</text>
+      </view>
+    </block>
+
+    <!--瞎推荐-->
+    <view class="category_title">
+      <text>瞎推荐</text>
+    </view>
+    <!--内容-->
+    <block wx:for="{{resultsOther}}" wx:for-item="item_content">
+      <view class="catetory_content" bindtap="bindItemClick" data-content="{{item_content}}">
+        <image src="/image/icon_other.png" mode="aspectFit"></image>
+        <text>{{item_content.desc}}</text>
+      </view>
+    </block>
+
+  </view>
+
+</view>
