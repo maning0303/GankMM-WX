@@ -6,11 +6,11 @@
 #### [干货集中营(http://gank.io/)](http://gank.io/)
 
 ## 项目截图：
-![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_01.png)
-![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_02.png)
-![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_03.png)
-![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_04.png)
-![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_05.png)
+![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_001.png)
+![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_002.png)
+![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_003.png)
+![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_004.png)
+![](https://github.com/maning0303/GankMM-WX/raw/master/screenshot/screenshot_005.png)
 
 ## 感谢：
 ##### [代码家-干货集中营](https://github.com/daimajia)
